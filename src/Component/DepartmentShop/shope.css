@@ -1,0 +1,31 @@
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 equal-width columns */
+    gap: 16px; /* Adjust the gap between images if needed */
+  }
+  
+  .image-card {
+    text-align: center;
+  }
+  
+  .image-card img {
+    max-width: 100%; /* Ensure images don't exceed their container width */
+  }
+  
+
+@media (min-width: 163px) and (max-width: 576px) {
+    .image-grid{
+        display: block;
+    }
+    .image-card {
+      display: flex;
+      text-align: left;
+    }
+    .image-card p{
+        font-size: 20px;
+        margin: 75px 0 0 10px;
+    }
+    .image-card img {
+      max-width: 50%; /* Ensure images don't exceed their container width */
+    }
+}
