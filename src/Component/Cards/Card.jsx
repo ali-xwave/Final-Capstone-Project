@@ -3,39 +3,59 @@ import img1 from "../../assets/cardimg1.jpg";
 import img2 from "../../assets/cardimg2.jpg";
 import img3 from "../../assets/cardimg3.jpg";
 import img4 from "../../assets/cardimg4.jpg";
+import wayfer from "../../assets/wayfair.jpg";
 import "./card.css";
 const Card = () => {
+  const card = [
+    {
+      img: img1,
+      heading: "Outdoor Decore From $50",
+      para: "Make a merry impression",
+    },
+
+    {
+      img: img2,
+      heading: "Ornaments From $10 ",
+      para: "For very branch and budget",
+    },
+
+    {
+      img: img3,
+      heading: "Wreaths & Garlands From $25 ",
+      para: "Save. Hang. Admire",
+    },
+
+    {
+      img: img4,
+      heading: "Indore Decore Under From $45 ",
+      para: "Instant cheer starts here",
+    },
+  ];
   return (
     <>
-      <div className="container my-5">
+      <div className="container">
         <div className="text-center">
-          <h1>Easy Holiday Decorating Under Budget</h1>
+          <h1 className="font-family">Easy Holiday Decorating Under Budget</h1>
         </div>
 
         <div class="main pt-5">
-          <div class="col">
-            <img src={img1} alt="" className="img-fluid" />
-            <h5 className="fw-bold">Outdoor Decore From $50 </h5>
-            <span>Make a merry impression</span>
-            <span></span>
-          </div>
-          <div class="col">
-            <img src={img2} alt="" />
-            <h5 className="fw-bold">Ornaments From $10 </h5>
-            <span>For very branch and budget</span>
-            <span></span>
-          </div>
-          <div class="col">
-            <img src={img3} alt="" />
-            <h5 className="fw-bold">Wreaths & Garlands From $25 </h5>
-            <span>Save. Hang. Admire</span>
-            <span></span>
-          </div>
-          <div class="col">
-            <img src={img4} alt="" />
-            <h5 className="fw-bold">Indore Decore Under From $45 </h5>
-            <span>Instant cheer starts here</span>
-            <span></span>
+          {card.map((item) => {
+            return (
+              <>
+                <div class="cols">
+                  <img src={item.img} alt="" className="img-fluid" />
+                  <h5 className="fw-bold card-heading">{item.heading}</h5>
+                  <span className="para-style">{item.para}</span>
+                  <span></span>
+                </div>
+              </>
+            );
+          })}
+        </div>
+
+        <div className="row py-4">
+          <div className="col-md-12">
+            <img src={wayfer} alt="" className="img-fluid" />
           </div>
         </div>
       </div>

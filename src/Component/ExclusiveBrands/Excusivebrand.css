@@ -1,48 +1,52 @@
 
-.main {
+.body {
     width: 100%;
     margin: auto;
   }
 
-  .cols {
-    width: 24%;
+  .col p{
+    padding: 10px 0;
+  }
+
+  .col {
+    width: 15%;
     margin: 0.5%;
     float: left;
     text-align: center;
   }
 
-  .cols img {
+  .col img {
     width: 100%;
   }
   /* Extra small devices (phones) */
   @media (max-width: 576px) {
-    .main {
+    .body {
       width: 100%;
     }
 
-    .cols {
+    .col {
       width: 48%;
       margin: 1%;
     }
   }
   /* Small devices (tablets) */
   @media (min-width: 577px) and (max-width: 768px) {
-    .main {
+    .body {
       width: 100%;
     }
 
-    .cols {
+    .col {
       width: 48%;
       margin: 1%;
     }
   }
   /* Medium devices (laptops and desktops) */
   @media (min-width: 769px) and (max-width: 992px) {
-    .main {
+    .body {
       width: 100%;
     }
 
-    .cols {
+    .col {
       width: 48%;
       margin: 1%;
     }

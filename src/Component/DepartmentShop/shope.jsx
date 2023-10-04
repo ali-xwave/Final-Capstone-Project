@@ -20,14 +20,13 @@ const Shope = () => {
     <>
       <div className="container">
         <div className="text-center py-5">
-          <h1>Shop by Department</h1>
+          <h1 className="font-family">Shop by Department</h1>
         </div>
         <div class="image-grid">
           <div class="image-card">
             <img src={imgSale} alt="" className="img-fluid" />
             <p>Fall Clearance</p>
           </div>
-
           <div class="image-card">
             <img src={imgHoliday} alt="" className="img-fluid"/>
             <p>Holiday</p>
