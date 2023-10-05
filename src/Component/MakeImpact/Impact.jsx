@@ -2,6 +2,7 @@ import React from "react";
 import img1 from "../../assets/commit.webp";
 import img2 from "../../assets/shopblack.webp";
 import img3 from "../../assets/sustain.webp";
+import gift from "../../assets/EarnGiftimg.webp";
 const Impact = () => {
   const data = [
     {
@@ -38,6 +39,11 @@ const Impact = () => {
               </>
             );
           })}
+        </div>
+        <div className="row">
+          <div className="col-md-12">
+            <img src={gift} alt="" className="img-fluid"/>
+          </div>
         </div>
       </div>
     </div>

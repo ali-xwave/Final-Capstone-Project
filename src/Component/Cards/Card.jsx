@@ -10,7 +10,6 @@ const Card = () => {
     {
       img: img1,
       heading: "Outdoor Decore From $50",
-      para: "Make a merry impression",
     },
 
     {
@@ -37,25 +36,23 @@ const Card = () => {
         <div className="text-center">
           <h1 className="font-family">Easy Holiday Decorating Under Budget</h1>
         </div>
-
-        <div class="main pt-5">
+        <div class="main">
           {card.map((item) => {
             return (
               <>
                 <div class="cols">
                   <img src={item.img} alt="" className="img-fluid" />
                   <h5 className="fw-bold card-heading">{item.heading}</h5>
-                  <span className="para-style">{item.para}</span>
-                  <span></span>
+                  <p className="para-style">{item.para}</p>
                 </div>
               </>
             );
           })}
         </div>
 
-        <div className="row py-4">
+        <div className="row">
           <div className="col-md-12">
-            <img src={wayfer} alt="" className="img-fluid" />
+            <img src={wayfer} alt="" className="img-fluid"/>
           </div>
         </div>
       </div>

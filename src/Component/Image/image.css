@@ -1,0 +1,32 @@
+.input-style input {
+  padding: 0.7rem 1rem;
+  width: 70%;
+  border-radius: 10px;
+}
+.input-style button {
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  background: #934398;
+  color: white;
+  border: none;
+}
+
+.txt{
+  padding: 3.7rem 0 0 0;
+  text-align: right;
+}
+
+@media (max-width: 576px) {
+   .input-style input{
+    width: 70.5%;
+    padding-left: 2rem;
+  }
+  .input-style{
+    padding-left: 2rem;
+  }
+
+  .txt{
+    padding: 3.7rem 0 0 0;
+    text-align: center;
+  }
+}

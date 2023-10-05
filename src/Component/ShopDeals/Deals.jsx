@@ -21,7 +21,7 @@ const Deals = () => {
   ];
   return (
     <>
-      <div className="container pb-5">
+      <div className="container">
         <div className="text-center py-4">
           <h1 className="font-family">Shop All Clearance Deals</h1>
         </div>

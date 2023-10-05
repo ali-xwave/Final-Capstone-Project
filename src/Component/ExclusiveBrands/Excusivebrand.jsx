@@ -35,7 +35,7 @@ const Excusivebrand = () => {
   ];
   return (
     <div>
-      <div className="container-fluid my-5">
+      <div className="container-fluid">
         <div className="text-center">
           <h1 className="font-family">Explore our Exclusive Brands</h1>
           <p className="para-style">
@@ -43,7 +43,7 @@ const Excusivebrand = () => {
             right.
           </p>
         </div>
-        <div class="body pt-5">
+        <div class="body pt-4">
           {card.map((item) => {
             return (
               <>

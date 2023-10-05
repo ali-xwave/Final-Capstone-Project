@@ -15,6 +15,64 @@ import imgBaby from "../../assets/BabyKit.webp";
 import imgOrg from "../../assets/organization.webp";
 import imgcustom from "../../assets/custom2.jpg";
 const Shope = () => {
+  const data = [
+    {
+      imgurl: imgSale,
+      txt: "Fall Clearance",
+    },
+    {
+      imgurl: imgHoliday,
+      txt: "Holiday",
+    },
+    {
+      imgurl: imgFurniture,
+      txt: "Furniture",
+    },
+    {
+      imgurl: imgOutdoor,
+      txt: "Outdoor",
+    },
+    {
+      imgurl: imgBed,
+      txt: "Bedding & Bath",
+    },
+    {
+      imgurl: imgDecore,
+      txt: "Decor & Pillows",
+    },
+    {
+      imgurl: imgRugs,
+      txt: "Rugs",
+    },
+    {
+      imgurl: imgLight,
+      txt: "Lighting",
+    },
+    {
+      imgurl: imgHome,
+      txt: "Home Improvement",
+    },
+    {
+      imgurl: imgApplince,
+      txt: "Appliances",
+    },
+    {
+      imgurl: imgKitchen,
+      txt: "Kitchen",
+    },
+    {
+      imgurl: imgBaby,
+      txt: "Baby & Kids",
+    },
+    {
+      imgurl: imgOrg,
+      txt: "Organization",
+    },
+    {
+      imgurl: imgcustom,
+      txt: "Custom Cabinetry",
+    },
+  ];
 
   return (
     <>
@@ -23,68 +81,16 @@ const Shope = () => {
           <h1 className="font-family">Shop by Department</h1>
         </div>
         <div class="image-grid">
-          <div class="image-card">
-            <img src={imgSale} alt="" className="img-fluid" />
-            <p>Fall Clearance</p>
-          </div>
-          <div class="image-card">
-            <img src={imgHoliday} alt="" className="img-fluid"/>
-            <p>Holiday</p>
-          </div>
-
-          <div class="image-card">
-            <img src={imgFurniture} alt="" className="img-fluid"/>
-            <p>Furniture</p>
-          </div>
-          <div class="image-card">
-            <img src={imgOutdoor} alt="" className="img-fluid"/>
-            <p>Outdoor</p>
-          </div>
-          <div class="image-card">
-            <img src={imgBed} alt="" className="img-fluid"/>
-            <p>Bedding & Bath</p>
-          </div>
-          <div class="image-card">
-            <img src={imgDecore} alt="" className="img-fluid"/>
-            <p>Decor & Pillows</p>
-          </div>
-          <div class="image-card">
-            <img src={imgRugs} alt="" className="img-fluid"/>
-            <p>Rugs</p>
-          </div>
-        </div>
-
-        <div class="image-grid">
-          <div class="image-card">
-            <img src={imgLight } alt="" className="img-fluid"/>
-            <p>Lighting</p>
-          </div>
-
-          <div class="image-card">
-            <img src={imgHome} alt="" className="img-fluid"/>
-            <p>Home Improvement</p>
-          </div>
-
-          <div class="image-card">
-            <img src={imgApplince} alt="" className="img-fluid"/>
-            <p>Appliances</p>
-          </div>
-          <div class="image-card">
-            <img src={imgKitchen} alt="" className="img-fluid"/>
-            <p>Kitchen</p>
-          </div>
-          <div class="image-card">
-            <img src={imgBaby} alt="" className="img-fluid"/>
-            <p>Baby & Kids</p>
-          </div>
-          <div class="image-card">
-            <img src={imgOrg} alt="" className="img-fluid"/>
-            <p>Organization</p>
-          </div>
-          <div class="image-card">
-            <img src={imgcustom} alt="" className="img-fluid"/>
-            <p>Custom Cabinetry</p>
-          </div>
+          {data.map((item) => {
+            return (
+              <>
+                <div class="image-card">
+                  <img src={item.imgurl} alt="" className="img-fluid" />
+                  <p>{item.txt}</p>
+                </div>
+              </>
+            );
+          })}
         </div>
       </div>
     </>

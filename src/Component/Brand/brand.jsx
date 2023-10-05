@@ -18,7 +18,7 @@ const Brand = () => {
   return (
     <div>
       <div className="container">
-        <div className="text-center">
+        <div className="text-center py-4">
           <h2 className="font-family">Top Finds From Brands You'll Love</h2>
         </div>
         <div className="row pt-3 pb-5">
