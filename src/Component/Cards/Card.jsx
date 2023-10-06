@@ -51,7 +51,7 @@ const Card = () => {
         </div>
 
         <div className="row">
-          <div className="col-md-12">
+          <div className="col-md-12 image">
             <img src={wayfer} alt="" className="img-fluid"/>
           </div>
         </div>

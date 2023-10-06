@@ -84,7 +84,7 @@ const Shope = () => {
           {data.map((item) => {
             return (
               <>
-                <div class="image-card">
+                <div class="image-card  ">
                   <img src={item.imgurl} alt="" className="img-fluid" />
                   <p>{item.txt}</p>
                 </div>

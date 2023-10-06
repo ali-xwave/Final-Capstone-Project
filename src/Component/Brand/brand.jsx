@@ -25,8 +25,8 @@ const Brand = () => {
           {data.map((item) => {
             return (
               <>
-                <div className="col-md-6">
-                  <div>
+                <div className="col-md-6  ">
+                  <div className="">
                     <img src={item.img} alt="" className="img-fluid" />
                     <div className="py-2 text-center">
                       <h4>{item.text}</h4>

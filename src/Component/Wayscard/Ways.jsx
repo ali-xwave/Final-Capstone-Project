@@ -46,7 +46,7 @@ const Ways = () => {
         </div>
 
         <div className="row pt-3 pb-5">
-          <div className="col-md-12">
+          <div className="col-md-12 image">
             <img src={img60} alt="" className="img-fluid" />
           </div>
         </div>

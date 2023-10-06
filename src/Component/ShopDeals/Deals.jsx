@@ -30,7 +30,7 @@ const Deals = () => {
           {img.map((item) => {
             return(
               <>
-              <div className="colss">
+              <div className="colss image">
                   <img src={item.image} alt="" />
               </div>
               </>

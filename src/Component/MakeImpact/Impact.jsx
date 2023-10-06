@@ -42,7 +42,9 @@ const Impact = () => {
         </div>
         <div className="row">
           <div className="col-md-12">
-            <img src={gift} alt="" className="img-fluid"/>
+           <div className="image">
+           <img src={gift} alt="" className="img-fluid"/>
+           </div>
           </div>
         </div>
       </div>

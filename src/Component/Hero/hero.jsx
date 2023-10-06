@@ -19,9 +19,10 @@ const Hero = () => {
   return (
     <div>
       <hr />
-      <div className="container">
+      <div className="container-fluid">
+        <div className="container">
         <div className="row">
-          <div className="col-md-8">
+          <div className="col-md-7">
             <div>
               <Swiper
                 spaceBetween={30}
@@ -56,41 +57,42 @@ const Hero = () => {
               </Swiper>
             </div>
           </div>
-          <div className="col-md-4">
-            <div className="pd">
-              <img src={percentSixty} alt="" className="img-fluid" />
-            </div>
-            <div className="pt-2">
+          <div className="col-md-5">
+            <div className="pd image">
+              <img className="img-fluid " src={percentSixty} alt=""  />
+            </div> 
+            <div className="pt-2 image" >
               <img src={fifty} alt="" className="img-fluid" />
             </div>
           </div>
         </div>
 
-        <div className="row pt-5">
+        <div className="row pt-4">
           <div className="col-md-4">
-            <div>
+            <div className="image">
               <img src={percentforty} alt="" className="img-fluid" />
             </div>
           </div>
           <div className="col-md-4">
-            <div className="padding">
+            <div className="padding image">
               <img src={fortyFive} alt="" className="img-fluid" />
             </div>
           </div>
 
           <div className="col-md-4">
-            <div className="padding">
+            <div className="padding image">
               <img src={fiftyFive} alt="" className="img-fluid" />
             </div>
           </div>
         </div>
 
         <div className="row pt-4">
-          <div className="col-md-12">
+          <div className="col-md-12 image">
             <div>
             <img src={imgmodern} alt="" className="img-fluid" width="1200px" />
             </div>
           </div>
+        </div>
         </div>
       </div>
     </div>

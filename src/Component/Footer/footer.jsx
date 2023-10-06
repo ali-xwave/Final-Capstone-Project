@@ -5,6 +5,10 @@ import twit from "../../assets/twitter.png"
 import face from "../../assets/facebook.png"
 import pin from "../../assets/pintrest.png"
 import insta from "../../assets/instagram.png"
+import jossmain from "../../assets/jm.png"
+import Allmoderan from "../../assets/jm2.png"
+import birchln from "../../assets/jm3.png"
+
 const Footer = () => {
   return (
     <div>
@@ -48,11 +52,23 @@ const Footer = () => {
       <hr />
 
       <div className="container">
-        <div className="">
-          <span><img src={twit} alt="" className="img-fluid twit" /></span>
-          <span><img src={face} alt="" className="img-fluid face"/></span>
-          <span><img src={pin} alt="" className="img-fluid pin"/></span>
-          <span><img src={insta} alt="" className="img-fluid insta"/></span>
+        <div className="d-flex py-4">
+          <img src={jossmain} alt="Joss&main" className="imgsize" />
+          <img src={Allmoderan} alt="Allmoderan" className="imgsize-two px-4" />
+          <img src={birchln} alt="birchln" className="imgsize" />
+        </div>
+        <div>
+          <span className="px-3"><img src={twit} alt="" className="img-fluid twit" /></span>
+          <span><img src={face} alt="" className="img-fluid face" /></span>
+          <span className="px-3"><img src={pin} alt="" className="img-fluid pin" /></span>
+          <span><img src={insta} alt="" className="img-fluid insta" /></span>
+        </div>
+
+        <div className="Anchor">
+          <span><a href="">Terms of use</a></span>
+          <span><a href="">Privacy Policy</a></span>
+          <span><a href="">Your Privacy Rights & Choices</a></span>
+          <p className="pt-3 ps-2">© 2002 - 2023 by Wayfair LLC, 4 Copley Place, 7th Floor, Boston, MA 02116</p>
         </div>
       </div>
     </div>

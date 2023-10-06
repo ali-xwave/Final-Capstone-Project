@@ -5,6 +5,7 @@ import Shope from "./Component/DepartmentShop/shope";
 import Excusivebrand from "./Component/ExclusiveBrands/Excusivebrand";
 import Footer from "./Component/Footer/footer";
 import Header from "./Component/Header/header";
+import HeaderTwo from "./Component/HeaderTwo/headerTwo";
 import Hero from "./Component/Hero/hero";
 import Image from "./Component/Image/Image";
 import Impact from "./Component/MakeImpact/Impact";
@@ -18,6 +19,7 @@ function App() {
     <>
     <Title />
     <Header />
+    <HeaderTwo />
     <Hero />
     <Shope />
     <Deals />

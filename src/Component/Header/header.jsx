@@ -1,3 +1,4 @@
+
 import React from "react";
 import bar from "../../assets/bars-solid.svg";
 import logo from "../../assets/Header-logo.svg";
@@ -41,6 +42,26 @@ const Header = () => {
                 <div>
                   <img src="" alt="" />
                   <p>Department</p>
+                  <p>Sale</p>
+                  <hr />
+                  <h5>My Account</h5>
+                  <p>Khan123@gmail.com</p>
+                  <p>My Orderd</p>
+                  <p>Review My Purchases</p>
+                  <hr />
+                  <p>Recently Viewed</p>
+                  <p>Lists</p>
+                  <p>Design Services</p>
+                  <p>3D Room Planner</p>
+                  <hr />
+                  <p>Wayfair Credit Card</p>
+                  <p>Wayfair Financing</p>
+                  <p>Gift Card</p>
+                  <p>Wayfair Professional</p>
+                  <p>Help & Contact</p>
+                  <hr />
+                  <p>Ideas and Advice</p>
+                  <p>Download the Wayfair App</p>
                 </div>
               </div>
             </div>

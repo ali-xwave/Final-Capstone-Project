@@ -47,7 +47,7 @@ const Excusivebrand = () => {
           {card.map((item) => {
             return (
               <>
-                <div class="col">
+                <div class="col  ">
                   <img src={item.imgUrl} alt="" className="img-fluid" />
                   <p className="para-style">{item.para}</p>
                 </div>
