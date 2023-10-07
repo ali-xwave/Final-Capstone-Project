@@ -1,24 +1,18 @@
 .img-bar {
   width: 27px;
 }
-
-.anchor a {
-  text-decoration: none;
-  color: #000;
-}
-
 .anchor a:hover {
-  color: #7f187f;
+  color: #7f187f !important;
 }
-
-.Menu-color {
-  color: #7f187f;
+.Menu-style {
   font-size: 1.2rem;
+}
+.Menu-style:hover {
+  color: #7f187f;
 }
 .search {
   width: 620px;
 }
-
 @media (min-width: 162px) and (max-width: 576px) {
   .search {
     order: 1; /* Place the search div at the bottom */
@@ -32,12 +26,11 @@
   .display-menu {
     display: none;
   }
-  .sign-display{
+  .sign-display {
     display: none;
     padding: 0 5px 0 0;
   }
 }
-
 @media (min-width: 577px) and (max-width: 768px) {
   .search {
     order: 1; /* Place the search div at the bottom */
@@ -46,22 +39,20 @@
     margin: 15px 0 0 0;
     width: 100%;
   }
-
-  .d-flex{
+  .d-flex {
     display: flex;
     justify-content: space-between;
   }
   .display-menu {
     display: none;
   }
-  .display{
+  .display {
     display: none;
   }
-  .sign-display{
+  .sign-display {
     padding: 0 10px 0 0;
   }
 }
-
 @media (min-width: 769px) and (max-width: 992px) {
   .display {
     display: none;
@@ -74,7 +65,7 @@
     border: 1px solid black;
     border-radius: 10px;
   }
-  .sign-display{
+  .sign-display {
     display: none;
   }
 }

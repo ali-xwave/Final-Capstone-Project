@@ -5,7 +5,6 @@ import img3 from "../../assets/mercuryimg.jpg";
 import img4 from "../../assets/Sandimg.jpg";
 import img5 from "../../assets/Solimg.jpg";
 import img6 from "../../assets/basisimg.jpg";
-import "./Excusivebrand.css";
 const Excusivebrand = () => {
   const card = [
     {
@@ -35,7 +34,7 @@ const Excusivebrand = () => {
   ];
   return (
     <div>
-      <div className="container-fluid">
+      <div className="container">
         <div className="text-center">
           <h1 className="font-family">Explore our Exclusive Brands</h1>
           <p className="para-style">
@@ -43,13 +42,13 @@ const Excusivebrand = () => {
             right.
           </p>
         </div>
-        <div class="body pt-4">
-          {card.map((item) => {
+        <div class="row pt-4">
+          {card.map((item) => { 
             return (
               <>
-                <div class="col  ">
+                <div class="col-12 col-md-4 col-lg-2">
                   <img src={item.imgUrl} alt="" className="img-fluid" />
-                  <p className="para-style">{item.para}</p>
+                  <p className="para-style py-3">{item.para}</p>
                 </div>
               </>
             );

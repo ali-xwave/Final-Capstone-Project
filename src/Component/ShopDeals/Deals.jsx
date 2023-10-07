@@ -1,5 +1,4 @@
 import React from "react";
-import "./Deals.css";
 import per60 from "../../assets/Percent-60.jpg";
 import per601 from "../../assets/hero-60.jpg";
 import per551 from "../../assets/ShopImg2.jpg";
@@ -25,14 +24,15 @@ const Deals = () => {
         <div className="text-center py-4">
           <h1 className="font-family">Shop All Clearance Deals</h1>
         </div>
-
-        <div class="inner">
+        <div className="row">
           {img.map((item) => {
-            return(
+            return (
               <>
-              <div className="colss image">
-                  <img src={item.image} alt="" />
-              </div>
+                <div className="col-12 col-md-3 col-lg-3">
+                  <div className="py-2">
+                    <img src={item.image} alt="" className="img-fluid" />
+                  </div>
+                </div>
               </>
             )
           })}

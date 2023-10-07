@@ -5,6 +5,8 @@ import logo from "../../assets/Header-logo.svg";
 import btn_sign from "../../assets/sign-in-btn.svg";
 import btn_cart from "../../assets/cart-btn.svg";
 import "./header.css";
+import { Link, Outlet } from "react-router-dom";
+import Hero from "../Hero/hero";
 const Header = () => {
   return (
     <div>
@@ -66,13 +68,12 @@ const Header = () => {
               </div>
             </div>
           </div>
-          <span class="Menu-color display-menu">Menu</span>
+          <span class="Menu-style display-menu">Menu</span>
           <div>
             <a href="">
               <img src={logo} alt="" class="px-3" />
             </a>
           </div>
-
           <div class="search">
             <input
               class="form-control me-2"
@@ -81,15 +82,17 @@ const Header = () => {
             />
           </div>
           <div class="anchor">
-            <a href="">
-              <img src={btn_sign} alt="" className="img-fluid px-2" />
-              <span className="ps-2 sign-display">Sign In</span>
-              <img src={btn_cart} alt="" className="img-fluid" />
-              <span className="display ps-2 display">Cart</span>
-            </a>
+            <img src={btn_sign} alt="" className="img-fluid px-2" />
+            <Link to="/SignIn" href="" className="text-decoration-none text-dark">
+              <span className="ps-2 sign-display ">Sign In</span>
+            </Link>
+            <img src={btn_cart} alt="" className="img-fluid" />
+            <a href="" className="text-decoration-none text-dark"><span className="display ps-2">Cart</span></a>
+
           </div>
         </div>
       </div>
+      <Outlet />
     </div>
   );
 };

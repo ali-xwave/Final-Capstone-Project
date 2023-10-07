@@ -1,6 +1,7 @@
 import React from "react";
 import "./title.css";
 import Arrow from "../../assets/Arrow.svg";
+import { Outlet } from "react-router-dom";
 const Title = () => {
   return (
     <div className="title-bg">
@@ -13,6 +14,7 @@ const Title = () => {
               <p className="text-display title-size">Our App | Wayfair Professional | Free Shipping Over $35*</p>
             </div>
         </div>
+        <Outlet />
       </div>
   );
 };

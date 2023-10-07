@@ -1,16 +1,12 @@
 .color p {
   color: #c4113f;
-  text-decoration: solid;
 }
 
-.color-b{
-    color: #000;
-    text-decoration: none;
+.hover:hover{
+  color: #7F187F !important;
+  text-decoration: underline !important;
 }
-.color-b:hover{
-    color: #934893;
-    text-decoration: solid;
-}
+
 @media (max-width: 576px) {
   .header-display {
     display: none;

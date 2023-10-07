@@ -55,7 +55,7 @@ const HeaderTwo = () => {
                     return (
                         <>
                             <div className='header-display para-style'>
-                                <a href="" className='color-b'><span>{item.heading}</span></a>
+                                <a href="" className='text-dark text-decoration-none hover'><span>{item.heading}</span></a>
                             </div>
                         </>
                     )
