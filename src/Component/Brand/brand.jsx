@@ -26,7 +26,7 @@ const Brand = () => {
             return (
               <>
                 <div className="col-md-6  ">
-                  <div className="">
+                  <div className="cards">
                     <img src={item.img} alt="" className="img-fluid" />
                     <div className="py-2 text-center">
                       <h4>{item.text}</h4>

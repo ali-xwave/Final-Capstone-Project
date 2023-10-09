@@ -14,6 +14,7 @@ import imgKitchen from "../../assets/Kitchen.webp";
 import imgBaby from "../../assets/BabyKit.webp";
 import imgOrg from "../../assets/organization.webp";
 import imgcustom from "../../assets/custom2.jpg";
+import { Link } from "react-router-dom";
 const Shope = () => {
   const data = [
     {
@@ -84,10 +85,12 @@ const Shope = () => {
           {data.map((item) => {
             return (
               <>
-                <div class="image-card  ">
-                  <img src={item.imgurl} alt="" className="img-fluid" />
-                  <p>{item.txt}</p>
-                </div>
+                <Link to="/FurniturePage" >
+                  <div class="image-card cards">
+                    <img src={item.imgurl} alt="" className="img-fluid" />
+                    <p>{item.txt}</p>
+                  </div>
+                </Link>
               </>
             );
           })}

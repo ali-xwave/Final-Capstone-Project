@@ -1,6 +1,6 @@
 import React from "react";
 import img1 from "../../assets/kelyimg.jpg";
-import img2 from "../../assets/Threeimg.jpg";
+import img2 from "../../assets/Threeimg.webp";
 import img3 from "../../assets/mercuryimg.jpg";
 import img4 from "../../assets/Sandimg.jpg";
 import img5 from "../../assets/Solimg.jpg";
@@ -46,7 +46,7 @@ const Excusivebrand = () => {
           {card.map((item) => { 
             return (
               <>
-                <div class="col-12 col-md-4 col-lg-2">
+                <div class="col-12 col-md-4 col-lg-2 cards">
                   <img src={item.imgUrl} alt="" className="img-fluid" />
                   <p className="para-style py-3">{item.para}</p>
                 </div>

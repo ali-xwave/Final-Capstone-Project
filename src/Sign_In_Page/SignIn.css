@@ -1,0 +1,14 @@
+.input,input{
+    width: 42%;
+}
+
+.btn button{
+    width: 42%;
+    background-color: #7f187f;
+}
+
+@media (max-width: 576px) {
+    .input,input{
+        width: 100%;
+    }
+}

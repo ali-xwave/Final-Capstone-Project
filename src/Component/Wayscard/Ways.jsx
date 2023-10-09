@@ -34,7 +34,7 @@ const Ways = () => {
             return (
               <>
                 <div className="col-md-4">
-                  <div className="text-center">
+                  <div className="text-center cards">
                     <img src={item.imgurl} alt="" className="img-fluid" />
                     <h1 className="card-heading pt-3">{item.Heading}</h1>
                     <p className="para-style">{item.Para}</p>

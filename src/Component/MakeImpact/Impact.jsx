@@ -30,7 +30,7 @@ const Impact = () => {
             return (
               <>
                 <div className="col-md-4">
-                  <div className="text-center">
+                  <div className="text-center cards">
                     <img src={item.imgurl} alt="" className="img-fluid" />
                     <h5 className="pt-3 card-heading">{item.heading}</h5>
                     <p className="para-style">{item.para}</p>

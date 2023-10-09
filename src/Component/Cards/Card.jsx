@@ -4,7 +4,6 @@ import img2 from "../../assets/cardimg2.jpg";
 import img3 from "../../assets/cardimg3.jpg";
 import img4 from "../../assets/cardimg4.jpg";
 import wayfer from "../../assets/wayfair.jpg";
-import "./card.css";
 const Card = () => {
   const card = [
     {
@@ -36,11 +35,11 @@ const Card = () => {
         <div className="text-center">
           <h1 className="font-family">Easy Holiday Decorating Under Budget</h1>
         </div>
-        <div class="main">
+        <div class="row">
           {card.map((item) => {
             return (
               <>
-                <div class="cols">
+                <div class="col-12 col-md-6 col-lg-3 cards">
                   <img src={item.img} alt="" className="img-fluid" />
                   <h5 className="fw-bold card-heading">{item.heading}</h5>
                   <p className="para-style">{item.para}</p>
