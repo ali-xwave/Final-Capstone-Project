@@ -16,10 +16,17 @@ const Hero = () => {
                 <div className='text-center Sign_hero_width'>
                     <h1 className='py-4 style'>Enter your email address to sign in or <br /> to create an account</h1>
                     <div className='pb-3 d-flex justify-content-center para-style'>
-                        <input className='px-3 py-2 rounded para-style' type="email" placeholder='Email Address' />
+                        <input className='px-3 py-2 rounded-pill para-style' type="email" placeholder='Email Address' />
                     </div>
-                    <input className='px-3 py-2 rounded-pill para-style border-0 button text-white' type="submit" value='Continue' />
+                    <div className='pb-3'>
+                        <input className='px-3 py-2 rounded-pill para-style' type="Password" placeholder='Enter Your Password' />
+                    </div>
+                    <Link to="/"><input className='px-3 py-2 rounded-pill para-style border-0 button text-white' type="submit" value='Continue' /></Link>
+                    <div className='pt-3'>
+                        <Link to="/SignUp"><input className='px-3 py-2 rounded-pill para-style border-0 button text-white' type="submit" value='Create a New Account' /></Link>
+                    </div>
                 </div>
+
             </div>
         </div>
     )

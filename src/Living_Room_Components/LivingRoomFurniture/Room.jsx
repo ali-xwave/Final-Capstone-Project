@@ -1,5 +1,7 @@
 import React from 'react'
 import "./Room.css"
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Furnitureimg1 from "../../assets/LivigRoomfurnitureimg1.jpg";
 import Furnitureimg2 from "../../assets/LivigRoomfurnitureimg2.jpg";
 import Furnitureimg3 from "../../assets/LivigRoomfurnitureimg3.jpg";
@@ -90,7 +92,9 @@ const Room = () => {
     return (
         <div className='fruniture-bg py-3'>
             <div className='container'>
+            
                 <p className='pt-4'>Furniture Living Room Furniture</p>
+                <Link to="/FurniturePage" className='text-decoration-none'><p className='text-danger'> <FontAwesomeIcon icon={faArrowLeft} /> Furniture</p></Link>
                 <h1 className='pt-2 pb-4'>Living Room Furniture</h1>
                 <div className='row'>
 
@@ -98,7 +102,7 @@ const Room = () => {
                         return (
                             <>
                                 <div className='col-12 col-md-6 col-lg-3'>
-                                    <Link className='text-decoration-none text-dark'>
+                                    <Link to="/LivingRoomSets" className='text-decoration-none text-dark'>
                                         <div className='d-flex my-2 py-1 cards fruniture-bg-color'>
                                             <img src={item.imgUlr} alt="" className='img-fluid' />
                                             <span className='d-flex align-items-center ps-2'>{item.para}</span>

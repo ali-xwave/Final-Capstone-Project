@@ -1,8 +1,8 @@
 import React from 'react'
-import Header from '../Furniture_Page_Components/Header/header';
-import Title from '../Furniture_Page_Components/Title/title';
-import HeaderTwo from '../Furniture_Page_Components/HeaderTwo/headerTwo';
 import Furniture from '../Furniture_Page_Components/Furniture/Furniture';
+import Title from '../Component/Title/title';
+import Header from '../Component/Header/header';
+import HeaderTwo from '../Component/HeaderTwo/headerTwo';
 
 const FurniturePage = () => {
     return (

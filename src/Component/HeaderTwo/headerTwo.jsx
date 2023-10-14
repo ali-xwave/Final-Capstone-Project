@@ -12,8 +12,10 @@ const HeaderTwo = () => {
             heading: "Bedding & Bath"
         },
         {
-            heading: "Rugs"
+            heading: "Rugs",
         },
+
+
         {
             heading: "Décor & Pillows"
         },

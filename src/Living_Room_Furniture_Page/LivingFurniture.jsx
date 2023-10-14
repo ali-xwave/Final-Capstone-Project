@@ -1,8 +1,8 @@
 import React from 'react'
-import Header from '../Living_Room_Components/Header/header'
-import Title from '../Living_Room_Components/Title/title'
-import HeaderTwo from '../Living_Room_Components/HeaderTwo/headerTwo'
 import Room from '../Living_Room_Components/LivingRoomFurniture/Room'
+import Title from '../Component/Title/title'
+import Header from '../Component/Header/header'
+import HeaderTwo from '../Component/HeaderTwo/headerTwo'
 
 const LivingFurniture = () => {
   return (
