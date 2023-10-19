@@ -21,16 +21,14 @@ const Deals = () => {
   return (
     <>
       <div className="container">
-        <div className="text-center py-4">
-          <h1 className="font-family">Shop All Clearance Deals</h1>
-        </div>
+          <h1 className="font-family text-center pt-4">Shop All Clearance Deals</h1>
         <div className="row">
           {img.map((item) => {
             return (
               <>
                 <div className="col-12 col-md-6 col-lg-3">
-                  <div className="py-2 image">
-                    <img src={item.image} alt="" className="img-fluid" />
+                  <div className="image">
+                    <img src={item.image} alt="" className="img-fluid py-4" />
                   </div>
                 </div>
               </>
@@ -41,5 +39,4 @@ const Deals = () => {
     </>
   );
 };
-
 export default Deals;

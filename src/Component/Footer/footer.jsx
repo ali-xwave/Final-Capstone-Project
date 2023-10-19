@@ -8,6 +8,7 @@ import insta from "../../assets/instagram.png"
 import jossmain from "../../assets/jm.png"
 import Allmoderan from "../../assets/jm2.png"
 import birchln from "../../assets/jm3.png"
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -28,7 +29,7 @@ const Footer = () => {
             <p>Advertise With Us</p>
             <p>Locations</p>
           </div>
-          <div className="col-md-4  para-style">
+          <div className="col-md-4 para-style">
             <h1 className="card-heading">Customer Service</h1>
             <p>My Orders</p>
             <p>My Account</p>
@@ -41,8 +42,8 @@ const Footer = () => {
           <div className="col-md-4">
             <h1 className="card-heading">Contact Us</h1>
 
-            <button className="para-style px-4 rounded-pill py-2 back-color">
-              <img src={question} alt="" className="img-fluid img-width" />
+            <button className="para-style px-4 rounded-pill py-2 back-color border-0 text-white">
+              <img src={question} alt="" className="img-fluid img-width px-1" />
               Quick Help
             </button>
           </div>
@@ -52,10 +53,16 @@ const Footer = () => {
       <hr />
 
       <div className="container">
-        <div className="d-flex py-4">
-          <img src={jossmain} alt="Joss&main" className="imgsize" />
-          <img src={Allmoderan} alt="Allmoderan" className="imgsize-two px-4" />
-          <img src={birchln} alt="birchln" className="imgsize" />
+        <div className="row py-4">
+          <div className="col-md-2">
+            <img src={jossmain} alt="" className="img-fluid w-75 " />
+          </div>
+          <div className="col-md-3 imges-p">
+            <img src={Allmoderan} alt="" className="img-fluid w-75" />
+          </div>
+          <div className="col-md-3">
+            <img src={birchln} alt="" className="img-fluid w-75" />
+          </div>
         </div>
         <div>
           <span className="px-3"><img src={twit} alt="" className="img-fluid twit" /></span>
@@ -64,12 +71,18 @@ const Footer = () => {
           <span><img src={insta} alt="" className="img-fluid insta" /></span>
         </div>
 
-        <div className="Anchor">
-          <span><a href="">Terms of use</a></span>
-          <span><a href="">Privacy Policy</a></span>
-          <span><a href="">Your Privacy Rights & Choices</a></span>
-          <p className="pt-3 ps-2">© 2002 - 2023 by Wayfair LLC, 4 Copley Place, 7th Floor, Boston, MA 02116</p>
+        <div className="flex-style pt-3">
+          <div>
+            <Link className="text-dark text-decoration-none hover">Terms of use</Link>
+          </div>
+          <div>
+            <Link className="text-dark text-decoration-none hover p">Privacy Policy</Link>
+          </div>
+          <div>
+            <Link className="text-dark text-decoration-none hover">Your Privacy Rights & Choices</Link>
+          </div>
         </div>
+        <p className="pt-3">© 2002 - 2023 by Wayfair LLC, 4 Copley Place, 7th Floor, Boston, MA 02116</p>
       </div>
     </div>
   );

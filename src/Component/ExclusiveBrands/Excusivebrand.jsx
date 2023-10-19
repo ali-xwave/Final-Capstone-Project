@@ -1,6 +1,6 @@
 import React from "react";
 import img1 from "../../assets/kelyimg.jpg";
-import img2 from "../../assets/Threeimg.webp";
+import img2 from "../../assets/Threeimg.jpg";
 import img3 from "../../assets/mercuryimg.jpg";
 import img4 from "../../assets/Sandimg.jpg";
 import img5 from "../../assets/Solimg.jpg";
@@ -35,20 +35,22 @@ const Excusivebrand = () => {
   return (
     <div>
       <div className="container">
-        <div className="text-center">
-          <h1 className="font-family">Explore our Exclusive Brands</h1>
-          <p className="para-style">
+          <h1 className="font-family text-center pt-4">Explore our Exclusive Brands</h1>
+          <p className="para-style text-center">
             Bring your vision to life with hand-curated collections, priced just
             right.
           </p>
-        </div>
-        <div class="row pt-4">
-          {card.map((item) => { 
+        <div class="row">
+          {card.map((item) => {
             return (
               <>
-                <div class="col-12 col-md-4 col-lg-2 cards">
-                  <img src={item.imgUrl} alt="" className="img-fluid" />
-                  <p className="para-style py-3">{item.para}</p>
+                <div class="col-12 col-md-4 col-lg-2">
+                  <div className="py-4">
+                    <div className="cards">
+                      <img src={item.imgUrl} alt="" className="img-fluid" />
+                      <p className="para-style py-3">{item.para}</p>
+                    </div>
+                  </div>
                 </div>
               </>
             );

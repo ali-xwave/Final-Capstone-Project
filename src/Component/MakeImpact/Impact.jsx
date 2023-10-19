@@ -25,15 +25,17 @@ const Impact = () => {
     <div>
       <div className="container">
         <h1 className="text-center font-family">What We're Doing to Make an Impact</h1>
-        <div className="row pb-5 pt-2">
+        <div className="row">
           {data.map((item) => {
             return (
               <>
                 <div className="col-md-4">
-                  <div className="text-center cards">
-                    <img src={item.imgurl} alt="" className="img-fluid" />
-                    <h5 className="pt-3 card-heading">{item.heading}</h5>
-                    <p className="para-style">{item.para}</p>
+                  <div className="text-center py-4">
+                    <div className="cards">
+                      <img src={item.imgurl} alt="" className="img-fluid" />
+                      <h5 className="pt-3 card-heading">{item.heading}</h5>
+                      <p className="para-style">{item.para}</p>
+                    </div>
                   </div>
                 </div>
               </>
@@ -42,9 +44,11 @@ const Impact = () => {
         </div>
         <div className="row">
           <div className="col-md-12">
-           <div className="image">
-           <img src={gift} alt="" className="img-fluid"/>
-           </div>
+            <div className="py-3">
+              <div className="image">
+                <img src={gift} alt="" className="img-fluid" />
+              </div>
+            </div>
           </div>
         </div>
       </div>

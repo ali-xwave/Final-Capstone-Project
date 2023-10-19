@@ -17,7 +17,7 @@ import linksimg11 from "../../assets/gift.svg";
 import linksimg12 from "../../assets/wayfair-tag.svg";
 import linksimg13 from "../../assets/info-icon.svg";
 import "./header.css";
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 const Header = () => {
 
   const links = [
@@ -68,7 +68,8 @@ const Header = () => {
       imgurl: linksimg11,
       text: "Gift Card"
     },
-    {imgurl: linksimg12,
+    {
+      imgurl: linksimg12,
       text: "Wayfair Professional"
     },
     {
@@ -93,9 +94,9 @@ const Header = () => {
                   <>
                     <div className="para-style">
                       <div className="">
-                      <span className="px-2"><img src={item.imgurl} alt="" className="img-fluid py-2" width="30px" /></span>
-                      <Link className="text-decoration-none text-dark"><span className="py-5">{item.text}</span></Link>
-                      <span>{item.line}</span>
+                        <span className="px-2"><img src={item.imgurl} alt="" className="img-fluid py-2" width="30px" /></span>
+                        <Link className="text-decoration-none text-dark"><span className="py-5">{item.text}</span></Link>
+                        <span>{item.line}</span>
                       </div>
                     </div>
                   </>
@@ -125,11 +126,27 @@ const Header = () => {
               <span className="px-2 sign-display ">Sign In</span>
             </Link>
             <img src={btn_cart} alt="" className="img-fluid" />
-            <Link className="text-decoration-none text-dark"><span className="display ps-2">Cart</span></Link>
+            <span type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><span className="display ps-2">Cart</span></span>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title cart-p fw-bold" id="offcanvasRightLabel">In Your Cart</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <hr />
+              <div class="offcanvas-body">
+                <h5>Oh-no! Looks like your cart is empty.</h5>
+                <h6>Here are some options to get you started:</h6>
+                <div className="py-3">
+                  <Link to="/SignIn"><span className="txt-color fs-5"><u>Sign In</u></span></Link><span className="fs-5 ps-2"> to View your saved items </span>
+                </div>
+                <div>
+                  <span className="fs-5">Start saving with</span> <Link><span className="ps-1 txt-color fs-5 "><u> Daily Sales</u></span></Link>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <Outlet />
     </div>
   );
 };

@@ -1,5 +1,4 @@
 import React from 'react'
-import "./Furniture.css"
 import Furnitureimg1 from "../../assets/Furniture1.jpg";
 import Furnitureimg2 from "../../assets/Furniture2.webp";
 import Furnitureimg3 from "../../assets/Furniture3.jpg";
@@ -14,7 +13,8 @@ import Furnitureimg11 from "../../assets/Furniture11.jpg";
 import Furnitureimg12 from "../../assets/Furniture12.jpg"
 import Furnitureimg13 from "../../assets/Furniture13.webp";
 import { Link } from 'react-router-dom';
-const Furniture = () => {
+
+const Furniture1 = () => {
 
     const furnitureCard = [
         {
@@ -77,25 +77,24 @@ const Furniture = () => {
             <div className='container'>
                 <h1 className='py-3'>Furniture</h1>
                 <div className='row'>
-
                     {furnitureCard.map((item) => {
                         return (
                             <>
                                 <div className='col-12 col-md-6 col-lg-3'>
-                                    <Link to="/LivingFurniture" className='text-decoration-none text-dark'>
+                                    <Link to="/LivingRoomFurniture" className='text-decoration-none text-dark'>
                                         <div className='d-flex my-2 py-1 cards fruniture-bg-color'>
                                             <img src={item.imgUlr} alt="" className='img-fluid' />
                                             <span className='d-flex align-items-center ps-2'>{item.para}</span>
-                                        </div></Link>
+                                        </div>
+                                    </Link>
                                 </div>
                             </>
                         )
                     })}
-
                 </div>
             </div>
         </div>
     )
 }
 
-export default Furniture;
+export default Furniture1;

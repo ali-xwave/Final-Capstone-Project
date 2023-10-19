@@ -1,51 +1,46 @@
-.back-color{
-    background-color: #934398;
-    color: white;
-    border: none;
+.back-color {
+  background-color: #934398;
 }
 
-.img-width{
-    width: 35px;
-    padding: 0 5px;
+.img-width {
+  width: 35px;
 }
 
-.para-style p{
-    font-family: sofia, sofiaFallback, arial, sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    color: #211e22;
+.para-style p {
+  font-family: sofia, sofiaFallback, arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #211e22;
+}
+.twit {
+  width: 20px;
+}
+.face {
+  width: 35px;
+}
+
+.insta {
+  width: 27px;
+}
+.pin {
+  width: 20px;
+}
+.flex-style{
+  display: flex;
+}
+.p{
+  padding: 0 1rem;
+}
+
+@media(max-width: 576px) {
+  .imges-p{
+    padding: 2rem 0;
+  }
+  .flex-style{
+    display: block;
   }
 
-  .span-style img{
-    width: 50px;
+  .p{
+    padding: 0;
   }
-  .twit{
-    width: 20px;
-  }
-  .face{
-width: 35px;
-  }
-
-  .insta{
-width: 27px;
-  }
-  .pin{
-width: 20px;
-  }
-
-  .Anchor a{
-    color: #934398;
-    padding: 0 10px;
-  }
-  .Anchor{
-    padding: 20px 0 0 0;
-  }
-  .imgsize{
-    width: 150px;
-    height: 23px;
-
-  }
-  .imgsize-two{
-    width: 200px;
-    height: 20px;
-  }
+}

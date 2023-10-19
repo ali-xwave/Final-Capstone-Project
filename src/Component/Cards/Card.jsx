@@ -32,17 +32,19 @@ const Card = () => {
   return (
     <>
       <div className="container">
-        <div className="text-center">
-          <h1 className="font-family">Easy Holiday Decorating Under Budget</h1>
-        </div>
+        <h1 className="font-family text-center pt-3">Easy Holiday Decorating Under Budget</h1>
         <div class="row">
           {card.map((item) => {
             return (
               <>
-                <div class="col-12 col-md-6 col-lg-3 cards">
-                  <img src={item.img} alt="" className="img-fluid" />
-                  <h5 className="fw-bold card-heading">{item.heading}</h5>
-                  <p className="para-style">{item.para}</p>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div className="py-4">
+                    <div className="cards">
+                      <img src={item.img} alt="" className="img-fluid" />
+                      <h5 className="card-heading">{item.heading}</h5>
+                      <p className="para-style">{item.para}</p>
+                    </div>
+                  </div>
                 </div>
               </>
             );
@@ -50,8 +52,12 @@ const Card = () => {
         </div>
 
         <div className="row">
-          <div className="col-md-12 image">
-            <img src={wayfer} alt="" className="img-fluid"/>
+          <div className="col-md-12 ">
+            <div className="py-3">
+              <div className="image">
+                <img src={wayfer} alt="" className="img-fluid" />
+              </div>
+            </div>
           </div>
         </div>
       </div>

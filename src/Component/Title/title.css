@@ -1,7 +1,3 @@
-.title-bg{
-    background-color: #7F187F;
-}
-
 @media (min-width: 162px) and (max-width: 576px){
 .text-display{
     display: none;
@@ -25,7 +21,6 @@
         font-size: 14.2px;
     }
 }
-
 @media (min-width: 769px) and (max-width: 992px) {
 
 }

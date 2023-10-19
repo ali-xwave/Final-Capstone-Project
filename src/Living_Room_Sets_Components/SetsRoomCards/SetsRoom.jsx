@@ -4,7 +4,55 @@ import img1 from "../../assets/Room+Set1.jpg";
 import img2 from "../../assets/Room+Set2.jpg";
 import img3 from "../../assets/Room+Set3copy.jpg";
 import imgstar from "../../assets/stars.svg";
-import { Link } from 'react-router-dom';
+
+const dropdown = [
+    {
+        text: "Sectionals",
+    },
+    {
+        text: "Sofas",
+    },
+    {
+        text: "Chairs & Seating",
+    },
+    {
+        text: "Coffee Tables & End Tables",
+    },
+    {
+        text: "Loveseats",
+    },
+    {
+        text: "TV Stands & Media Storage Furniture",
+    },
+    {
+        text: "Cabinets & Chests",
+    },
+    {
+        text: "Console Tables",
+    },
+    {
+        text: "Ottomans & Poufs",
+    },
+    {
+        text: "Small Space Living Rooms",
+    },
+    {
+        text: "Bookcases",
+    },
+    {
+        text: "Futons & Daybeds",
+    },
+    {
+        text: "Fireplaces & Stoves",
+    },
+    {
+        text: "Slipcovers",
+    },
+    {
+        text: "Living Room Furniture Sale",
+    },
+
+]
 
 const SetsRoom = () => {
 
@@ -56,27 +104,19 @@ const SetsRoom = () => {
                                 </h2>
                                 <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                     <div class="accordion-body">
-                                       
+
                                         <div className="scrollable-list">
-                                        <ul class="list-unstyled ">
-                                        <p className='ms-0'>Living Room Furniture</p>
-                                            <li class=" py-2 fw-bold">Living Room Sets</li>
-                                            <li class=" py-2 ">Sectionals</li>
-                                            <li class=" py-2 ">Sofas</li>
-                                            <li class=" py-2 ">Chairs & Seating</li>
-                                            <li class=" py-2 ">Coffee Tables & End Tables</li>
-                                            <li class=" py-2 ">Loveseats</li>
-                                            <li class=" py-2 ">TV Stands & Media Storage Furniture</li>
-                                            <li class=" py-2 ">Cabinets & Chests</li>
-                                            <li class=" py-2 ">Console Tables</li>
-                                            <li class=" py-2 ">Ottomans & Poufs</li>
-                                            <li class=" py-2 ">Small Space Living Rooms</li>
-                                            <li class=" py-2 ">Bookcases    </li>
-                                            <li class=" py-2 ">Futons & Daybeds</li>
-                                            <li class=" py-2 ">Fireplaces & Stoves</li>
-                                            <li class=" py-2 ">Slipcovers</li>
-                                            <li class=" py-2 ">Living Room Furniture Sale</li>
-                                        </ul>
+                                            <ul class="list-unstyled ">
+                                                <p className='ms-0'>Living Room Furniture</p>
+                                                <li className='fw-bold'>Living Room Sets</li>
+                                                {dropdown.map((item) => {
+                                                    return (
+                                                        <>
+                                                            <li class="py-2">{item.text}</li>
+                                                        </>
+                                                    )
+                                                })}
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>

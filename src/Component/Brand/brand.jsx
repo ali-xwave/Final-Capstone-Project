@@ -18,19 +18,19 @@ const Brand = () => {
   return (
     <div>
       <div className="container">
-        <div className="text-center py-4">
-          <h2 className="font-family">Top Finds From Brands You'll Love</h2>
-        </div>
-        <div className="row pt-3 pb-5">
+        <h2 className="font-family text-center py-4">Top Finds From Brands You'll Love</h2>
+        <div className="row">
           {data.map((item) => {
             return (
               <>
-                <div className="col-md-6  ">
-                  <div className="cards">
-                    <img src={item.img} alt="" className="img-fluid" />
-                    <div className="py-2 text-center">
-                      <h4>{item.text}</h4>
-                      <p className="para-style">{item.paratxt}</p>
+                <div className="col-md-6">
+                  <div className="py-3">
+                    <div className="cards">
+                      <img src={item.img} alt="" className="img-fluid" />
+                      <div className="py-2 text-center">
+                        <h4>{item.text}</h4>
+                        <p className="para-style">{item.paratxt}</p>
+                      </div>
                     </div>
                   </div>
                 </div>

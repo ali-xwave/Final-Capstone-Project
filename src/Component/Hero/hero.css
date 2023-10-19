@@ -1,14 +1,9 @@
-
-  
-  /* .container:hover .middle {
-    opacity: 1;
-  } */
 @media (max-width: 576px) {
     .pd{
         padding: 20px 0 0 0;
     }
 
     .padding{
-        padding: 20px 0 0 0;
+        padding: 20px 0;
     }
 }

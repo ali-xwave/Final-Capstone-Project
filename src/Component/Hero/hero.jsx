@@ -19,83 +19,81 @@ const Hero = () => {
   return (
     <div>
       <hr />
-      <div className="container-fluid">
-        <div className="container">
-        <div className="row">
-          <div className="col-md-7">
-            <div>
-              <Swiper
-                spaceBetween={30}
-                centeredSlides={true}
-                autoplay={{
-                  delay: 2500,
-                  disableOnInteraction: false,
-                }}
-                pagination={{
-                  clickable: true,
-                }}
-                navigation={true}
-                modules={[Autoplay, Pagination, Navigation]}
-                className="mySwiper"
-              >
-                <SwiperSlide>
-                  <div className="position-relative">
-                    <img src={img2} alt="" className="img-fluid" />
-                    <div className="position-absolute top-0 start-0">
-                      <img src={img1} alt="" className="img-fluid" />
+      <div className="container-fluid px-5">
+          <div className="row">
+            <div className="col-md-7">
+              <div>
+                <Swiper
+                  spaceBetween={30}
+                  centeredSlides={true}
+                  autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                  }}
+                  pagination={{
+                    clickable: true,
+                  }}
+                  navigation={true}
+                  modules={[Autoplay, Pagination, Navigation]}
+                  className="mySwiper"
+                >
+                  <SwiperSlide>
+                    <div className="position-relative">
+                      <img src={img2} alt="" className="img-fluid" />
+                      <div className="position-absolute top-0 start-0">
+                        <img src={img1} alt="" className="img-fluid" />
+                      </div>
                     </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="position-relative">
-                    <img src={img3} alt="" className="img-fluid" />
-                    <div className="position-absolute top-0 start-0">
-                      <img src={img4} alt="" className="img-fluid" />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="position-relative">
+                      <img src={img3} alt="" className="img-fluid" />
+                      <div className="position-absolute top-0 start-0">
+                        <img src={img4} alt="" className="img-fluid" />
+                      </div>
                     </div>
-                  </div>
-                </SwiperSlide>
-              </Swiper>
+                  </SwiperSlide>
+                </Swiper>
+              </div>
             </div>
-          </div>
-          <div className="col-md-5">
-            <div className="pd image">
-              <img className="img-fluid " src={percentSixty} alt=""  />
-            </div> 
-            <div className="pt-2 image" >
-              <img src={fifty} alt="" className="img-fluid" />
-            </div>
-          </div>
-        </div>
-
-        <div className="row pt-4">
-          <div className="col-md-4">
-            <div className="image">
-              <img src={percentforty} alt="" className="img-fluid" />
-            </div>
-          </div>
-          <div className="col-md-4">
-            <div className="padding image">
-              <img src={fortyFive} alt="" className="img-fluid" />
+            <div className="col-md-5">
+              <div className="pd image">
+                <img className="img-fluid " src={percentSixty} alt="" />
+              </div>
+              <div className="pt-2 image" >
+                <img src={fifty} alt="" className="img-fluid" />
+              </div>
             </div>
           </div>
 
-          <div className="col-md-4">
-            <div className="padding image">
-              <img src={fiftyFive} alt="" className="img-fluid" />
+          <div className="row pt-4">
+            <div className="col-md-4">
+              <div className="image">
+                <img src={percentforty} alt="" className="img-fluid" />
+              </div>
             </div>
-          </div>
-        </div>
+            <div className="col-md-4">
+              <div className="padding image">
+                <img src={fortyFive} alt="" className="img-fluid" />
+              </div>
+            </div>
 
-        <div className="row pt-4">
-          <div className="col-md-12 image">
-            <div>
-            <img src={imgmodern} alt="" className="img-fluid" width="1200px" />
+            <div className="col-md-4">
+              <div className="image">
+                <img src={fiftyFive} alt="" className="img-fluid" />
+              </div>
             </div>
           </div>
-        </div>
+
+          <div className="row pt-4">
+            <div className="col-md-12 image">
+              <div>
+                <img src={imgmodern} alt="" className="img-fluid" width="1200px" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
   );
 };
 

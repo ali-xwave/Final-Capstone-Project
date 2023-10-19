@@ -1,5 +1,6 @@
 import React from 'react'
 import "./headertwo.css";
+import { Link } from 'react-router-dom';
 const HeaderTwo = () => {
     const header = [
         {
@@ -57,7 +58,7 @@ const HeaderTwo = () => {
                     return (
                         <>
                             <div className='header-display para-style'>
-                                <a href="" className='text-dark text-decoration-none hover'><span>{item.heading}</span></a>
+                                <Link href="" className='text-dark text-decoration-none hover'><span>{item.heading}</span></Link>
                             </div>
                         </>
                     )

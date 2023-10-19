@@ -34,10 +34,12 @@ const Ways = () => {
             return (
               <>
                 <div className="col-md-4">
-                  <div className="text-center cards">
-                    <img src={item.imgurl} alt="" className="img-fluid" />
-                    <h1 className="card-heading pt-3">{item.Heading}</h1>
-                    <p className="para-style">{item.Para}</p>
+                  <div className="text-center py-4">
+                    <div className="cards">
+                      <img src={item.imgurl} alt="" className="img-fluid" />
+                      <h1 className="card-heading pt-3">{item.Heading}</h1>
+                      <p className="para-style">{item.Para}</p>
+                    </div>
                   </div>
                 </div>
               </>
@@ -45,9 +47,13 @@ const Ways = () => {
           })}
         </div>
 
-        <div className="row pt-3 pb-5">
-          <div className="col-md-12 image">
-            <img src={img60} alt="" className="img-fluid" />
+        <div className="row">
+          <div className="col-md-12">
+            <div className="pb-5">
+              <div className="image">
+                <img src={img60} alt="" className="img-fluid" />
+              </div>
+            </div>
           </div>
         </div>
       </div>

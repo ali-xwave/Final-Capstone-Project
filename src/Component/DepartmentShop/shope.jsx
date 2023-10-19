@@ -85,7 +85,7 @@ const Shope = () => {
           {data.map((item) => {
             return (
               <>
-                <Link to="/FurniturePage" >
+                <Link to="/Furniture1" className="text-decoration-none" >
                   <div class="image-card cards">
                     <img src={item.imgurl} alt="" className="img-fluid" />
                     <p>{item.txt}</p>
