@@ -1,0 +1,16 @@
+.input,
+input {
+  width: 42%;
+}
+.alignment{
+  text-align: left;
+}
+@media (max-width: 576px) {
+  .input,
+  input {
+    width: 100%;
+  }
+  .alignment {
+    text-align: center;
+  }
+}

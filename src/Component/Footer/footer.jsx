@@ -1,10 +1,11 @@
 import React from "react";
 import "./footer.css";
 import question from "../../assets/icon.jpg";
-import twit from "../../assets/twitter.png"
-import face from "../../assets/facebook.png"
-import pin from "../../assets/pintrest.png"
-import insta from "../../assets/instagram.png"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook } from '@fortawesome/free-brands-svg-icons';
+import { faPinterest } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import jossmain from "../../assets/jm.png"
 import Allmoderan from "../../assets/jm2.png"
 import birchln from "../../assets/jm3.png"
@@ -42,7 +43,7 @@ const Footer = () => {
           <div className="col-md-4">
             <h1 className="card-heading">Contact Us</h1>
 
-            <button className="para-style px-4 rounded-pill py-2 back-color border-0 text-white">
+            <button className="para-style px-4 rounded-pill py-2 bg-color border-0 text-white">
               <img src={question} alt="" className="img-fluid img-width px-1" />
               Quick Help
             </button>
@@ -64,11 +65,12 @@ const Footer = () => {
             <img src={birchln} alt="" className="img-fluid w-75" />
           </div>
         </div>
+
         <div>
-          <span className="px-3"><img src={twit} alt="" className="img-fluid twit" /></span>
-          <span><img src={face} alt="" className="img-fluid face" /></span>
-          <span className="px-3"><img src={pin} alt="" className="img-fluid pin" /></span>
-          <span><img src={insta} alt="" className="img-fluid insta" /></span>
+          <span className="pe-3"><FontAwesomeIcon icon={faTwitter} style={{ color: "#7f187f"}} size="2x" /></span>
+          <span><FontAwesomeIcon icon={faFacebook} style={{ color: "#7f187f" }} size="2x"/></span>
+          <span className="px-3"><FontAwesomeIcon icon={faPinterest} style={{ color: "#7f187f" }} size="2x"/></span>
+          <span> <FontAwesomeIcon icon={faInstagram} style={{ color: "#7f187f" }} size="2x"/></span>
         </div>
 
         <div className="flex-style pt-3">

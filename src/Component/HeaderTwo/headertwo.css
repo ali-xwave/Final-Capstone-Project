@@ -1,7 +1,4 @@
-.color p {
-  color: #c4113f;
-}
-
+/* Header Two Css */
 .hover:hover{
   color: #7F187F !important;
   text-decoration: underline !important;
@@ -12,15 +9,14 @@
     display: none;
   }
 }
-
 @media (min-width: 577px) and (max-width: 768px) {
   .header-display {
     display: none;
   }
 }
-
 @media (min-width: 769px) and (max-width: 922px) {
   .header-display {
     display: none;
   }
 }
+/* Heder Two CSS End */

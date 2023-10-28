@@ -14,61 +14,62 @@ import Furnitureimg12 from "../../assets/Furniture12.jpg"
 import Furnitureimg13 from "../../assets/Furniture13.webp";
 import { Link } from 'react-router-dom';
 
-const Furniture1 = () => {
+const Furniture = () => {
 
     const furnitureCard = [
         {
-            imgUlr: Furnitureimg1,
+            id: "2",
+            img: Furnitureimg1,
             para: "Living Room Furniture",
         },
         {
-            imgUlr: Furnitureimg2,
+            img: Furnitureimg2,
             para: "Bedroom Furniture",
         },
         {
-            imgUlr: Furnitureimg3,
+            img: Furnitureimg3,
             para: "Kitchen & Dining Furniture",
         },
         {
-            imgUlr: Furnitureimg4,
+            img: Furnitureimg4,
             para: "Office Furniture",
         },
         {
-            imgUlr: Furnitureimg5,
+            img: Furnitureimg5,
             para: "Entry&Mudroom Furniture",
         },
         {
-            imgUlr: Furnitureimg6,
+            img: Furnitureimg6,
             para: "Outdoor & Patio Furniture",
         },
         {
-            imgUlr: Furnitureimg7,
+            img: Furnitureimg7,
             para: "Small Spaces",
         },
         {
-            imgUlr: Furnitureimg8,
+            img: Furnitureimg8,
             para: "Bathroom Furniture",
         },
 
         {
-            imgUlr: Furnitureimg9,
+            img: Furnitureimg9,
             para: "Baby & Kids Furniture",
         },
 
         {
-            imgUlr: Furnitureimg10,
+            img: Furnitureimg10,
             para: "Custom Furniture",
         },
         {
-            imgUlr: Furnitureimg11,
+            img: Furnitureimg11,
             para: "Game Tables & Game Room Furniture",
         },
         {
-            imgUlr: Furnitureimg12,
+            img: Furnitureimg12,
             para: "Pet",
         },
         {
-            imgUlr: Furnitureimg13,
+            img: Furnitureimg13,
             para: "Furniture Sale",
         },
     ]
@@ -81,9 +82,9 @@ const Furniture1 = () => {
                         return (
                             <>
                                 <div className='col-12 col-md-6 col-lg-3'>
-                                    <Link to="/LivingRoomFurniture" className='text-decoration-none text-dark'>
+                                    <Link to={`/LivingRoomFurniture/${item.id}`} className='text-decoration-none text-dark'>
                                         <div className='d-flex my-2 py-1 cards fruniture-bg-color'>
-                                            <img src={item.imgUlr} alt="" className='img-fluid' />
+                                            <img src={item.img} alt="" className='img-fluid' />
                                             <span className='d-flex align-items-center ps-2'>{item.para}</span>
                                         </div>
                                     </Link>
@@ -97,4 +98,4 @@ const Furniture1 = () => {
     )
 }
 
-export default Furniture1;
+export default Furniture;

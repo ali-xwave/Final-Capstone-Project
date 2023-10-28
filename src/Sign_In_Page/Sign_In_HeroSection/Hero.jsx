@@ -14,19 +14,29 @@ const Hero = () => {
     const [showUserPasswordError, setShowUserPasswordError] = useState(false);
 
     const userEmailHandler = (e) => {
-        setUserEmail(e.target.value);
+        const value = e.target.value;
+        setUserEmail(value);
 
-        if (userEmail !== "")
-            // setShowUserEmailError(false)
+        if (value.trim() === "") {
+            setShowUserEmailError(true);
+            setEmailMesg("Enter your valid Email or Phone Number");
+        } else {
+            setShowUserEmailError(true);
             setEmailMesg("Looks Good");
+        }
     };
 
     const userPasswordHandler = (e) => {
-        setUserPassword(e.target.value);
+        const value = e.target.value;
+        setUserPassword(value);
 
-        if (userPassword !== "")
-            // setShowUserPasswordError(false)
+        if (value.trim() === "") {
+            setShowUserPasswordError(true);
+            setPasswordMesg("Enter your valid password");
+        } else {
+            setShowUserPasswordError(true);
             setPasswordMesg("Looks Good");
+        }
     };
 
     const submitHandler = (e) => {
@@ -51,8 +61,8 @@ const Hero = () => {
                     </div>
                 </div>
                 <hr />
-                <div className='text-center Sign_hero_width'>
-                    <h1 className='py-4 style'>Enter your email address to sign in or <br /> to create an account</h1>
+                <div className='text-center' style={{height:500}}>
+                    <h1 className='py-4 font-family fs-4'>Enter your email address to sign in or <br /> to create an account</h1>
                     <form onSubmit={submitHandler}>
                         <div className="container-fluid ">
                             <div className="col-md-12">
@@ -82,11 +92,11 @@ const Hero = () => {
                         </div>
 
                         <div className="">
-                            <input className='px-3 py-2 rounded-pill para-style border-0 button text-white' type="submit" value='Continue' />
+                            <input className='px-3 py-2 rounded-pill para-style border-0 bg-color text-white' type="submit" value='Continue' />
                         </div>
                     </form>
                     <div className="pt-3">
-                        <Link to="/SignUp"><input className='px-3 py-2 rounded-pill para-style border-0 button text-white' type="submit" value='Create a New Account' /></Link>
+                        <Link to="/SignUp"><input className='px-3 py-2 rounded-pill para-style border-0 bg-color text-white' type="submit" value='Create a New Account' /></Link>
                     </div>
                 </div>
 

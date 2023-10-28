@@ -1,46 +1,20 @@
-.back-color {
-  background-color: #934398;
-}
-
 .img-width {
   width: 35px;
-}
-
-.para-style p {
-  font-family: sofia, sofiaFallback, arial, sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  color: #211e22;
-}
-.twit {
-  width: 20px;
-}
-.face {
-  width: 35px;
-}
-
-.insta {
-  width: 27px;
-}
-.pin {
-  width: 20px;
 }
 .flex-style{
   display: flex;
 }
 .p{
-  padding: 0 1rem;
-}
-
+  padding: 0 2rem;
+} 
 @media(max-width: 576px) {
   .imges-p{
     padding: 2rem 0;
   }
-  .flex-style{
+   .flex-style{
     display: block;
   }
-
   .p{
-    padding: 0;
+    padding: 3rem 0;
   }
 }

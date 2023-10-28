@@ -1,6 +1,6 @@
 import React from "react";
 import img1 from "../../assets/kelyimg.jpg";
-import img2 from "../../assets/Threeimg.jpg";
+import img2 from "../../assets/Threeimg.webp-cropped.svg";
 import img3 from "../../assets/mercuryimg.jpg";
 import img4 from "../../assets/Sandimg.jpg";
 import img5 from "../../assets/Solimg.jpg";

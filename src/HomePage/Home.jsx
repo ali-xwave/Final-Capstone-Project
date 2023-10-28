@@ -1,7 +1,4 @@
 import React from 'react'
-// import Title from '../Component/Title/title';
-// import Header from '../Component/Header/header';
-// import HeaderTwo from '../Component/HeaderTwo/headerTwo';
 import Hero from '../Component/Hero/hero';
 import Shope from '../Component/DepartmentShop/shope';
 import Deals from '../Component/ShopDeals/Deals';
@@ -18,9 +15,6 @@ const Home = () => {
 
     return (
         <div>
-            {/* <Title />
-            <Header />
-            <HeaderTwo /> */}
             <Hero />
             <Shope />
             <Deals />

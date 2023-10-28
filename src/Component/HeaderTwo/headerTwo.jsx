@@ -15,8 +15,6 @@ const HeaderTwo = () => {
         {
             heading: "Rugs",
         },
-
-
         {
             heading: "Décor & Pillows"
         },
@@ -47,7 +45,6 @@ const HeaderTwo = () => {
         {
             heading: "Shop by Room"
         },
-
     ]
     return (
         <>
@@ -64,8 +61,8 @@ const HeaderTwo = () => {
                     )
                 })}
             </div>
-            <div className='text-center para-style pt-4 color'>
-                <p>Sale</p>
+            <div className='text-center para-style pt-4'>
+                <p className='text-danger'>Sale</p>
             </div>
         </>
     )

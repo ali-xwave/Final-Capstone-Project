@@ -1,5 +1,4 @@
 import React from 'react'
-import "./Room.css"
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Furnitureimg1 from "../../assets/LivigRoomfurnitureimg1.jpg";
@@ -19,7 +18,7 @@ import Furnitureimg14 from "../../assets/LivigRoomfurnitureimg14.jpg";
 import Furnitureimg15 from "../../assets/LivigRoomfurnitureimg15.jpg";
 import Furnitureimg16 from "../../assets/LivigRoomfurnitureimg16.jpg";
 import { Link } from 'react-router-dom';
-const Room = () => {
+const LivingRoomFurniture = () => {
     const Room = [
         {
             imgUlr: Furnitureimg1,
@@ -30,6 +29,7 @@ const Room = () => {
             para: "Sofas",
         },
         {
+            id: "3",
             imgUlr: Furnitureimg3,
             para: "Living Room Sets",
         },
@@ -92,9 +92,8 @@ const Room = () => {
     return (
         <div className='fruniture-bg py-3'>
             <div className='container'>
-            
                 <p className='pt-4'>Furniture Living Room Furniture</p>
-                <Link to="/FurniturePage" className='text-decoration-none'><p className='text-danger'> <FontAwesomeIcon icon={faArrowLeft} /> Furniture</p></Link>
+                <Link to="/Furniture/:productId" className='text-decoration-none'><p className='text-danger'> <FontAwesomeIcon icon={faArrowLeft} /> Furniture</p></Link>
                 <h1 className='pt-2 pb-4'>Living Room Furniture</h1>
                 <div className='row'>
 
@@ -102,7 +101,7 @@ const Room = () => {
                         return (
                             <>
                                 <div className='col-12 col-md-6 col-lg-3'>
-                                    <Link to="/LivingRoomSets" className='text-decoration-none text-dark'>
+                                    <Link to={`/LivingRoomSets/${item.id}`} className='text-decoration-none text-dark'>
                                         <div className='d-flex my-2 py-1 cards fruniture-bg-color'>
                                             <img src={item.imgUlr} alt="" className='img-fluid' />
                                             <span className='d-flex align-items-center ps-2'>{item.para}</span>
@@ -118,4 +117,4 @@ const Room = () => {
     )
 }
 
-export default Room
+export default LivingRoomFurniture;

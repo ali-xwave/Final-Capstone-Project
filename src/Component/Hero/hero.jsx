@@ -19,7 +19,7 @@ const Hero = () => {
   return (
     <div>
       <hr />
-      <div className="container-fluid px-5">
+      <div className="container-fluid px-4">
           <div className="row">
             <div className="col-md-7">
               <div>
@@ -30,6 +30,7 @@ const Hero = () => {
                     delay: 2500,
                     disableOnInteraction: false,
                   }}
+                  
                   pagination={{
                     clickable: true,
                   }}
@@ -88,7 +89,7 @@ const Hero = () => {
           <div className="row pt-4">
             <div className="col-md-12 image">
               <div>
-                <img src={imgmodern} alt="" className="img-fluid" width="1200px" />
+                <img src={imgmodern} alt="" className="img-fluid" />
               </div>
             </div>
           </div>

@@ -1,77 +1,100 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import logo from "../../src/assets/Header-logo.svg";
 import { Link } from 'react-router-dom';
-const SignUpPage = () => {
 
+const SignUpPage = () => {
     const [userEmail, setUserEmail] = useState("");
-    const [emailMesg, setEmailMesg] = useState(
-        "Enter your vaild Email or Phone Number"
-    );
+    const [emailMesg, setEmailMesg] = useState("Enter your valid Email or Phone Number");
     const [showUserEmailError, setShowUserEmailError] = useState(false);
 
     const [firstName, setFirstName] = useState("");
     const [firstNameMesg, setFirstNameMesg] = useState("Enter your First Name");
     const [showFirstNameError, setShowFirstNameError] = useState(false);
 
-    const [surName, setSurtName] = useState("");
+    const [surName, setSurName] = useState("");
     const [surNameMesg, setSurNameMesg] = useState("Enter your SurName");
     const [showSurNameError, setShowSurNameError] = useState(false);
 
     const [userPassword, setUserPassword] = useState("");
-    const [passwordMesg, setPasswordMesg] = useState("Enter your vaild password");
+    const [passwordMesg, setPasswordMesg] = useState("Enter your valid password");
     const [showUserPasswordError, setShowUserPasswordError] = useState(false);
 
     const firstNameHandler = (e) => {
-        setFirstName(e.target.value);
+        const value = e.target.value;
+        setFirstName(value);
 
-        if (firstName !== "")
-            // setShowFirstNameError(false)
+        if (value.trim() === "") {
+            setShowFirstNameError(true);
+            setFirstNameMesg("Enter your First Name");
+        } else {
+            setShowFirstNameError(true);
             setFirstNameMesg("Looks Good");
+        }
     };
 
     const surNameHandler = (e) => {
-        setSurtName(e.target.value);
+        const value = e.target.value;
+        setSurName(value);
 
-        if (surName === "")
-            //setShowSurNameError
+        if (value.trim() === "") {
+            setShowSurNameError(true);
+            setSurNameMesg("Enter your SurName");
+        } else {
+            setShowSurNameError(true);
             setSurNameMesg("Looks Good");
+        }
     };
 
     const userEmailHandler = (e) => {
-        setUserEmail(e.target.value);
+        const value = e.target.value;
+        setUserEmail(value);
 
-        if (userEmail !== "")
-            // setShowUserEmailError(false)
+        if (value.trim() === "") {
+            setShowUserEmailError(true);
+            setEmailMesg("Enter your valid Email or Phone Number");
+        } else {
+            setShowUserEmailError(true);
             setEmailMesg("Looks Good");
+        }
     };
 
     const userPasswordHandler = (e) => {
-        setUserPassword(e.target.value);
+        const value = e.target.value;
+        setUserPassword(value);
 
-        if (userPassword !== "")
-            // setShowUserPasswordError(false)
+        if (value.trim() === "") {
+            setShowUserPasswordError(true);
+            setPasswordMesg("Enter your valid password");
+        } else {
+            setShowUserPasswordError(true);
             setPasswordMesg("Looks Good");
+        }
     };
 
     const submitHandler = (e) => {
         e.preventDefault();
 
-        if (firstName === "") {
+        if (firstName.trim() === "") {
             setShowFirstNameError(true);
+            setFirstNameMesg("Enter your First Name");
         }
 
-        if (surName === "") {
+        if (surName.trim() === "") {
             setShowSurNameError(true);
+            setSurNameMesg("Enter your SurName");
         }
 
-        if (userEmail === "") {
+        if (userEmail.trim() === "") {
             setShowUserEmailError(true);
+            setEmailMesg("Enter your valid Email or Phone Number");
         }
 
-        if (userPassword === "") {
+        if (userPassword.trim() === "") {
             setShowUserPasswordError(true);
+            setPasswordMesg("Enter your valid password");
         }
     };
+
     return (
         <div>
             <div className='container'>
@@ -141,7 +164,7 @@ const SignUpPage = () => {
                                         )}
                                     </div>
                                     <div className="">
-                                        <input className='px-3 py-2 rounded-pill para-style border-0 button text-white' type="submit" value='Sign Up' />
+                                        <input className='px-3 py-2 rounded-pill para-style border-0 bg-color text-white' type="submit" value='Sign Up' />
                                     </div>
                                 </div>
                             </form>
@@ -153,4 +176,4 @@ const SignUpPage = () => {
     )
 }
 
-export default SignUpPage
+export default SignUpPage;

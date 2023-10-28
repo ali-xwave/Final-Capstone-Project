@@ -5,22 +5,18 @@
   font-size: 31px;
   color: #211e22;
 }
-
 .para-style{
   font-family: sofia, sofiaFallback, arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: #211e22;
 }
-
 .card-heading{
     font-family: sofia, sofiaFallback, arial, sans-serif;
     font-weight: 700;
     font-size: 25px;
     color: #211e22;
-
 }
-
 .image img:hover {
   opacity: 0.9;
   border: 1px solid #000;
@@ -31,7 +27,6 @@
 .image img{
   border-radius: 10px;
 }
-
 .cards:hover{
   opacity: 0.9;
   border: 1px solid #000;
@@ -41,9 +36,17 @@
 .bg-color{
   background-color: #7f187f;
 }
+.txt-color{
+  color: #7f187f;
+}
+/* furniture style */
 
-
-/* furniture page style */
 .fruniture-bg-color{
   background-color: white;
-  }
+}
+
+.fruniture-bg{
+  background-color: #F5F5F5;
+}
+
+/* furniture style End */

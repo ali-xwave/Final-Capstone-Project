@@ -1,17 +1,13 @@
 import "./App.css";
 import React from "react";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-
-import Furniture1 from "./Furniture_Page_Components/Furniture/Furniture";
 import Title from "./Component/Title/title";
 import Home from "./HomePage/Home";
-import Room from "./Living_Room_Components/LivingRoomFurniture/Room";
-import SetsRoom from "./Living_Room_Sets_Components/SetsRoomCards/SetsRoom";
-// import SignIn from "./Sign_In_Page/SignIn";
-// import FurniturePage from "./Furniture_Page/Furniture";
-// import LivingFurniture from "./Living_Room_Furniture_Page/LivingFurniture";
-// import LivingRoomSets from "./Living_Room_sets_Page/LivingRoomSets";
-// import SignUp from "./Sign_Up_Page/SignUp";
+import Furniture from "./Component/Furniture/Furniture";
+import SignIn from "./Sign_In_Page/SignIn";
+import SignUpPage from "./Sign_Up_Page/SignUpPage";
+import LivingRoomFurniture from "./Component/LivingRoomFurniture/LivingRoomFurniture";
+import LivingRoomSets from "./Component/LivingRoomSetsCards/SetsRoom";
 function App() {
   let router = createBrowserRouter([
     {
@@ -23,19 +19,28 @@ function App() {
           element: <Home />
         },
         {
-          path: "/Furniture1",
-          element: <Furniture1 />
+          path: "/Furniture/:productId",
+          element: <Furniture />,
         },
         {
-          path: "/LivingRoomFurniture",
-          element: <Room />
+          path: "/LivingRoomFurniture/:roomId",
+          element: <LivingRoomFurniture />
         },
         {
-          path: "/LivingRoomSets",
-          element: <SetsRoom />
-        }
+          path: "/LivingRoomSets/:setsId",
+          element: <LivingRoomSets />
+        },
       ],
     },
+
+    {
+      path: "/SignIn",
+      element: <SignIn />
+    },
+    {
+      path: "/SignUp",
+      element: <SignUpPage />
+    }
   ]);
 
   return (

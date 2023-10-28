@@ -1,26 +1,11 @@
 .img-bar {
   width: 27px;
 }
-.anchor a:hover {
+.txt:hover {
   color: #7f187f !important;
 }
-.Menu-style:hover {
-  color: hsl(300, 68%, 30%);
-} 
 .search {
   width: 620px;
-}
-.button-color{
-  color: #7f187f;
-  outline: 1px solid #7f187f;
-  background-color: white;
-}
-.cart-p{
-  padding-left: 8rem;
-}
-
-.txt-color{
-  color: #7f187f;
 }
 @media (min-width: 162px) and (max-width: 576px) {
   .search {
@@ -62,3 +47,5 @@
     display: none;
   }
 }
+
+

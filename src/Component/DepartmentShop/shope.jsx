@@ -18,6 +18,7 @@ import { Link } from "react-router-dom";
 const Shope = () => {
   const data = [
     {
+      id: "2",
       imgurl: imgSale,
       txt: "Fall Clearance",
     },
@@ -26,6 +27,7 @@ const Shope = () => {
       txt: "Holiday",
     },
     {
+      id: "1",
       imgurl: imgFurniture,
       txt: "Furniture",
     },
@@ -85,7 +87,7 @@ const Shope = () => {
           {data.map((item) => {
             return (
               <>
-                <Link to="/Furniture1" className="text-decoration-none" >
+                <Link to={`/Furniture/${item.id}`} className="text-decoration-none" >
                   <div class="image-card cards">
                     <img src={item.imgurl} alt="" className="img-fluid" />
                     <p>{item.txt}</p>
