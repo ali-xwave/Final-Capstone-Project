@@ -44,7 +44,7 @@ const Excusivebrand = () => {
           {card.map((item) => {
             return (
               <>
-                <div class="col-12 col-md-4 col-lg-2">
+                <div class="col-6 col-md-4 col-lg-2">
                   <div className="py-4">
                     <div className="cards">
                       <img src={item.imgUrl} alt="" className="img-fluid" />

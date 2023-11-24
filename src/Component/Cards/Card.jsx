@@ -37,7 +37,7 @@ const Card = () => {
           {card.map((item) => {
             return (
               <>
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-6 col-md-6 col-lg-3">
                   <div className="py-4">
                     <div className="cards">
                       <img src={item.img} alt="" className="img-fluid" />

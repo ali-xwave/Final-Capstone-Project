@@ -26,7 +26,7 @@ const Deals = () => {
           {img.map((item) => {
             return (
               <>
-                <div className="col-12 col-md-6 col-lg-3">
+                <div className="col-6 col-md-6 col-lg-3">
                   <div className="image">
                     <img src={item.image} alt="" className="img-fluid py-4" />
                   </div>
